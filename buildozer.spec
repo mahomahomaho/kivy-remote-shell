@@ -1,10 +1,10 @@
 [app]
 
 # title of the application
-title = Kivy Remote Shell
+title = Kivy Remote Shell With Kivent
 
 # package name
-package.name = remoteshell
+package.name = rmshkivent
 
 # package domain (mostly used for android/ios package)
 package.domain = org.kivy
@@ -18,7 +18,9 @@ version.regex = __version__ = '(.*)'
 version.filename = %(source.dir)s/main.py
 
 # requirements of the app
-requirements = hostpython2,android,cryptography,pyasn1,pyjnius,pycrypto,twisted,kivy,docutils,pygments,cffi
+requirements = hostpython2,android,cryptography,pyasn1,pyjnius,pycrypto,twisted,kivy,docutils,pygments,cffi,kivent_core
+
+requirements.source.kivent_core = kivent/
 
 # android specific
 android.permissions = INTERNET, WAKE_LOCK, CAMERA, VIBRATE, ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, SEND_SMS, CALL_PRIVILEGED, CALL_PHONE
